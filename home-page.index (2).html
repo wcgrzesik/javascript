@@ -3,15 +3,7 @@
  <head>
   <meta charset="UTF-8" />
   <title>Znaczniki HTML</title>
-  <script type="text/javascript">
-   var today = new Date();
-   var day = today.getDate();
-   var month = today.getMonth()+1;
-   var year = today.getFullYear();
-   var hours = today.getHours();
-   var minutes = today.getMinutes();
-   var seconds = today.getSeconds();
-  </script>
+  <script type="text/javascript"src="timer.js"></script>
   <style>
 .container
 {
@@ -43,11 +35,11 @@ background-color:#555;
  }
  .timer
 {
-  
+  color:white;
 }
   </style>
 </head>
-<body>
+<body onload="odliczanie;">
  <div class="container">
    <div class="logo">
      <div class="left">
@@ -55,11 +47,10 @@ background-color:#555;
      </div>
    </div>
    <div class="timer">
-    
+    cos
    </div>
-   <script type="text/javascript">
-   document.getElementByClass("timer").innerHTML 
-   = day+"/"+month+"/"+year+"|"+hour+":"+minutes+":"+seconds;
+   <script type="text/javascript"src="timer.js">
+   document.getElementByClass("timer").innerHTML = day+"/"+month+"/"+year+"|"+hour+":"+minutes+":"+seconds;
   </script>
  </div>
 </body>
