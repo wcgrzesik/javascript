@@ -17,6 +17,7 @@ function odliczanie() {
     setTimeout(odliczanie, 1000);
 }
 var number = Math.floor(Math.random()*5)+1;
+
 function slider()
 {
   number++; if (number>5) number=1;
